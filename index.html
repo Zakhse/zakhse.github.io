@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Сергей Захаров (Zakhse)</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,user-scalable=no"
+    />
+    <meta name="description" content="Где меня можно найти" />
+    <meta property="og:title" content="Сергей Захаров (Zakhse)" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:first_name" content="Сергей" />
+    <meta property="og:last_name" content="Захаров" />
+    <meta property="og:username" content="Zakhse" />
+    <meta property="og:gender" content="male" />
+    <meta property="og:description" content="Где меня можно найти" />
+    <meta
+      property="og:image"
+      content="https://ru.gravatar.com/userimage/58324792/37b379dde94eaf621407a4faabbe2f86.jpg?size=400"
+    />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:url" content="http://zakhse.ru" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      html {
+        font-family: "Anonymous Pro", monospace;
+        font-display: block;
+        height: 100%;
+        color: white;
+      }
+
+      body {
+        position: relative;
+        min-height: 100%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        font-size: 16px;
+      }
+
+      body::before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-image: linear-gradient(45deg, #7dbee3 0%, #ffa082 100%);
+      }
+
+      main {
+        background-color: rgba(34, 41, 54, 0.769);
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        width: 34rem;
+        border-radius: 1rem;
+        overflow: hidden;
+      }
+
+      .photo-and-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 3.75rem 2.5rem;
+      }
+
+      .photo {
+        width: 15rem;
+        border-radius: 100vh;
+      }
+
+      .name {
+        font-size: 2em;
+        text-align: center;
+      }
+
+      .description {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 0.9em;
+      }
+
+      .contacts {
+        background-color: white;
+        color: rgba(0, 0, 0, 0.76);
+        padding: 2.5rem;
+      }
+
+      .contact {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 2rem;
+        border: solid 1px rgba(0, 0, 0, 0.169);
+        padding: 0.8rem 1.5rem;
+        cursor: pointer;
+        text-decoration: inherit;
+        color: inherit;
+      }
+
+      .contact + .contact {
+        margin-top: 1em;
+      }
+
+      .contact-description {
+        font-size: 0.85rem;
+      }
+
+      .contact-title {
+        margin-left: 2ch;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+      }
+
+      .contact-icon {
+        height: 2rem;
+        margin-left: 1ch;
+      }
+
+      @media screen and (max-width: 736px) {
+        body {
+          padding: 1.5rem;
+          font-size: 15px;
+        }
+
+        .photo-and-description {
+          padding: 3rem 2rem;
+        }
+
+        .name {
+          font-size: 1.9em;
+        }
+
+        .contacts {
+          padding: 2rem;
+        }
+      }
+
+      @media screen and (max-width: 480px) {
+        body {
+          padding: 1rem;
+        }
+
+        .photo-and-description {
+          padding: 2.25rem 1.5rem;
+        }
+
+        .description {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        .contacts {
+          padding: 1.5rem;
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+        body {
+          padding: 0.5rem;
+        }
+
+        .photo-and-description {
+          padding: 1.8rem 1.2rem;
+        }
+
+        .contacts {
+          padding: 1.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="photo-and-description">
+        <img
+          class="photo"
+          src="./images/photo.jpg"
+        />
+        <h1 class="name">Сергей Захаров (Zakhse)</h1>
+        <p class="description">
+          Здесь собраны контакты, где меня можно найти в интернете
+        </p>
+      </div>
+      <div class="contacts">
+        <a class="contact" href="https://t.me/zakhse" target="_blank">
+          <span class="contact-description"> Основной мессенджер </span>
+
+          <span class="contact-title">
+            Telegram
+            <img class="contact-icon" src="./images/sites-icons/telegram.png" />
+          </span>
+        </a>
+        <a class="contact" href="https://instagram.com/zakhse" target="_blank">
+          <span class="contact-description">
+            Обзоры на пиво 🍺, повседневные сторис
+          </span>
+
+          <span class="contact-title">
+            Instagram
+            <img
+              class="contact-icon"
+              src="./images/sites-icons/instagram.png"
+            />
+          </span>
+        </a>
+        <a
+          class="contact"
+          href="https://www.linkedin.com/in/zakhse/"
+          target="_blank"
+        >
+          <span class="contact-description">
+            Добавляйтесь в контакты 👀. Надеюсь, у вас есть VPN.
+          </span>
+
+          <span class="contact-title">
+            LinkedIn
+            <img class="contact-icon" src="./images/sites-icons/linkedin.png" />
+          </span>
+        </a>
+        <a
+          class="contact"
+          href="https://career.habr.com/zakhse"
+          target="_blank"
+        >
+          <span class="contact-description">
+            Сам себя не похвалишь — никто не похвалит.
+          </span>
+
+          <span class="contact-title">
+            Хабр Карьера
+            <img
+              class="contact-icon"
+              src="./images/sites-icons/habr-career.png"
+            />
+          </span>
+        </a>
+        <a class="contact" href="https://vk.com/zakhse" target="_blank">
+          <span class="contact-description">
+            Просто ВК, захожу периодически
+          </span>
+
+          <span class="contact-title">
+            VK
+            <img class="contact-icon" src="./images/sites-icons/vk.png" />
+          </span>
+        </a>
+        <a
+          class="contact"
+          href="https://untappd.com/user/zakhse"
+          target="_blank"
+        >
+          <span class="contact-description">
+            Короткие отзывы на пиво. Если не знаете, какое пиво выбрать,
+            заглядывайте сюда.
+          </span>
+
+          <span class="contact-title">
+            Untappd
+            <img
+              class="contact-icon"
+              src="./images/sites-icons/untappd.png"
+            />
+          </span>
+        </a>
+        <a
+          class="contact"
+          href="https://www.facebook.com/zakhse"
+          target="_blank"
+        >
+          <span class="contact-description">
+            Не знаю, зачем ко мне добавляются в друзья. Кто вообще в России его
+            использует?! Ну ладно, держите.
+          </span>
+
+          <span class="contact-title">
+            Facebook
+            <img
+              class="contact-icon"
+              src="./images/sites-icons/facebook.png"
+            />
+          </span>
+        </a>
+        <a class="contact" href="https://github.com/zakhse" target="_blank">
+          <span class="contact-description">
+            Не надейтесь найти что-то ценное. В основном всякая универская
+            дребедень.
+          </span>
+
+          <span class="contact-title">
+            GitHub
+            <img
+              class="contact-icon"
+              src="./images/sites-icons/github.png"
+            />
+          </span>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
